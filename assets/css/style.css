@@ -1,12 +1,37 @@
+thead ~ tbody {
+  background-color: #dbdbdb;
+  color: black;
+}
 table {
   max-height: 100%;
   min-width: 100%;
+  text-align: center;
+  font-size: 1.2em;
 }
-thead {
-  
+table > thead {
+  background: #061539;
+  opacity: 0.5;
+  color: white;
+  font-weight: bold;
 }
-td {
-  border: 2px solid red;
 
+thead,
+p {
+  padding-top: 24px;
+  font-size: 1.5em;
+}
+
+td {
   padding: 32px;
+}
+
+tfoot {
+  background: #dbdbdb;
+}
+.button {
+  text-decoration: none;
+  border: 2px solid;
+  padding: 14px 32px;
+  color: #636162;
+  background: #d3d3d3;
 }
