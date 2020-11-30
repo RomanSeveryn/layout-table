@@ -1,16 +1,17 @@
+:root {
+  margin: 1.2em;
+  font-size: 1.2em;
+}
 thead ~ tbody {
-  background-color: #dbdbdb;
   color: black;
 }
 table {
   max-height: 100%;
-  min-width: 100%;
+  min-width: 80%;
   text-align: center;
   font-size: 1.2em;
 }
 table > thead {
-  background: #061539;
-  opacity: 0.5;
   color: white;
   font-weight: bold;
 }
@@ -21,17 +22,70 @@ p {
   font-size: 1.5em;
 }
 
+table,
 td {
   padding: 32px;
 }
+thead > tr > td:nth-child(1) {
+  background: #7887ab;
+  vertical-align: middle;
+  text-align: center;
+}
+thead > tr > td:nth-child(2) {
+  background: #4f628e;
+}
+thead > tr > td:nth-child(3) {
+  background: #2e4172;
+}
 
-tfoot {
+thead > tr > td:nth-child(4) {
+  background: #162955;
+}
+thead > tr > td:nth-child(5) {
+  background: #061539;
+}
+tbody > tr:nth-child(2n + 1) > td:nth-child(2n + 1) {
   background: #dbdbdb;
 }
+tbody > tr:nth-child(2n + 1) > td:nth-child(2n) {
+  background: #e7e7e7;
+}
+
+tbody > tr:nth-child(2n) > td:nth-child(2n + 1) {
+  background: #ececec;
+}
+tbody > tr:nth-child(2n) > td:nth-child(2n) {
+  background: #f3f3f3;
+}
+
+td:first-child {
+  text-align: start;
+}
+
+tfoot > tr:nth-child(1) > td:nth-child(2n + 1) {
+  background: #dbdbdb;
+}
+
+tfoot > tr:nth-child(1) > td:nth-child(2n) {
+  background: #e7e7e7;
+}
+
 .button {
   text-decoration: none;
   border: 2px solid;
   padding: 14px 32px;
   color: #636162;
   background: #d3d3d3;
+}
+thead td:first-child {
+  border-top-left-radius: 12px;
+}
+thead td:last-child {
+  border-top-right-radius: 12px;
+}
+tfoot td:first-child {
+  border-bottom-left-radius: 12px;
+}
+tfoot td:last-child {
+  border-bottom-right-radius: 12px;
 }
